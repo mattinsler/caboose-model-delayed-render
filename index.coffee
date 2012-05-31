@@ -13,7 +13,7 @@ isPlainObject = (obj) ->
 module.exports =
   'caboose-plugin': {
     install: (util, logger) ->
-      return logger.error('caboose-model is a prerequisite.  Please install it first.') unless Caboose.app.plugins.is_laoded('caboose-model')
+      return logger.error('caboose-model is a prerequisite.  Please install it first.') unless Caboose.app.plugins.is_loaded('caboose-model')
       
       logger.title 'Running installer for caboose-model-delayed-render'
     
